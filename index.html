@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Following Breath | Breathwork &amp; Yoga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Fraunces:ital,wght@0,400;0,500;1,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+
+  <header>
+    <div class="brand"><img src="photos/logo.png" alt="" class="brand-mark">Following <span>Breath</span></div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="offers.html">Offers</a>
+      <a href="book.html">Book a Session</a>
+    </nav>
+    <div class="lang-switch">
+      <a href="index.html" class="active">EN</a> ·
+      <a href="index-de.html">DE</a> ·
+      <a href="index-zh.html">中文</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle">Night</button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Breathe. Soften. Arrive.</h1>
+      <p class="lede">
+        Online breathwork and yoga sessions, pranayama, hatha, yin, and
+        more, held with care. No experience needed.
+      </p>
+      <div class="cta-row">
+        <a href="book.html" class="btn btn-primary">Book a Session</a>
+        <a href="offers.html" class="btn btn-secondary">See the Offers</a>
+      </div>
+
+      <svg class="tide-line" viewBox="0 0 400 28" preserveAspectRatio="none">
+        <path d="M0,14 C40,2 80,26 120,14 C160,2 200,26 240,14 C280,2 320,26 360,14 C380,8 390,20 400,14" />
+      </svg>
+
+      <img class="site-photo hero-img" src="photos/home-hero.jpg" alt="Justus guiding a breathwork and sound session">
+    </section>
+
+    <section>
+      <h2>Welcome</h2>
+      <p>
+        I'm Justus, a certified breathwork practitioner and 500-hour yoga
+        teacher, holding most sessions online so they're open to anyone,
+        wherever you are (my in-person Rebirthing Transformation Series
+        is the one exception). Over the years that's grown into a fairly
+        broad toolkit, connected breathing, rebirthing breathwork,
+        pranayama, yoga, meditation, and a bit of bodywork and sound
+        healing besides, and I bring in whichever of it actually fits
+        what you need.
+      </p>
+      <p>
+        <a href="about.html">Read more about my background and training</a>
+      </p>
+
+      <div class="gallery-grid">
+        <img class="site-photo square" src="photos/home-portrait.jpg" alt="Portrait of Justus">
+        <img class="site-photo square" src="photos/home-session.jpg" alt="A session in progress">
+        <img class="site-photo square" src="photos/home-detail.jpg" alt="A quiet moment in the practice space">
+      </div>
+    </section>
+
+    <section>
+      <h2>How a Session Feels</h2>
+      <p>
+        Sessions are held online, one-on-one or in small groups. We start
+        by settling in together, move through breath and body, and close
+        with space to simply rest and feel whatever is there. Nothing is
+        forced, you're guided at your own pace.
+      </p>
+      <img class="site-photo wide" src="photos/home-wide.jpg" alt="Justus checking in with someone during a session">
+    </section>
+
+  </main>
+
+  <footer>
+    Following Breath &middot; followingbreath@gmail.com<br>
+    <a href="https://instagram.com/followingbreath" target="_blank" rel="noopener">Instagram</a> &middot;
+    <a href="https://www.tiktok.com/@followingbreath" target="_blank" rel="noopener">TikTok</a> &middot;
+    RedNote: FollowingBreath (ID 18778811369)
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('themeToggle');
+      var root = document.body;
+
+      function apply(theme) {
+        root.setAttribute('data-theme', theme);
+        toggle.textContent = theme === 'dark' ? 'Day' : 'Night';
+      }
+
+      var saved = 'light';
+      try {
+        saved = localStorage.getItem('fb-theme') || 'light';
+      } catch (e) {}
+      apply(saved);
+
+      toggle.addEventListener('click', function () {
+        var current = root.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        apply(next);
+        try {
+          localStorage.setItem('fb-theme', next);
+        } catch (e) {}
+      });
+    })();
+  </script>
+
+</body>
+</html>
