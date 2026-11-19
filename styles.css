@@ -448,6 +448,84 @@ img.site-photo.wide {
   }
 }
 
+/* ---- Offer map ---- */
+
+.offer-map {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin: 1.8rem auto 0.5rem;
+}
+
+.offer-map a {
+  cursor: pointer;
+}
+
+.offer-map .map-link {
+  fill: none;
+  stroke: var(--driftwood);
+  stroke-width: 1.5;
+  opacity: 0.55;
+}
+
+.offer-map .map-hub-circle {
+  fill: var(--card-bg);
+  stroke: var(--border);
+  stroke-width: 1.5;
+  transition: stroke 0.15s ease;
+}
+
+.offer-map .map-node-circle {
+  fill: var(--accent-soft);
+  stroke: var(--accent);
+  stroke-width: 1.5;
+  transition: stroke 0.15s ease, stroke-width 0.15s ease;
+}
+
+.offer-map a:hover .map-node-circle {
+  stroke: var(--driftwood);
+  stroke-width: 2.5;
+}
+
+.offer-map a:hover .map-hub-circle {
+  stroke: var(--accent);
+  stroke-width: 2.5;
+}
+
+.offer-map .map-label {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 15px;
+  font-weight: 500;
+  fill: var(--text);
+  text-anchor: middle;
+  transition: fill 0.15s ease;
+}
+
+.offer-map a:hover .map-label {
+  fill: var(--driftwood);
+}
+
+.offer-map .map-hub-label {
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  font-size: 15px;
+  fill: var(--text);
+  text-anchor: middle;
+  transition: fill 0.15s ease;
+}
+
+.offer-map a:hover .map-hub-label {
+  fill: var(--accent);
+}
+
+.offer-map .map-descriptor {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 11px;
+  fill: var(--text-soft);
+  text-anchor: middle;
+}
+
 /* ---- Offer cards ---- */
 
 .offer-grid {
