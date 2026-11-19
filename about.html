@@ -18,7 +18,9 @@
       <a href="index.html">Home</a>
       <a href="about.html" class="active">About</a>
       <a href="offers.html">Offers</a>
-      <a href="book.html">Book a Session</a>
+      <a href="index.html#current">Current</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="book.html" class="nav-cta">Book a Session</a>
     </nav>
     <div class="lang-switch">
       <a href="about.html" class="active">EN</a> ·
@@ -70,8 +72,8 @@
     <section>
       <h2>What People Say</h2>
       <div class="offer-grid">
-        <div class="offer-card">
-          <p style="font-style: italic;">"I had my first ever Rebirthing Breathwork session with Justus and it was really transformative. He made me feel completely safe and held throughout and is so intuitive in the way he approaches sessions, knowing when to offer guidance and when to let it flow, and it created a really profound experience for me. Even the care taken before and after the session was carefully considered and I would absolutely trust Justus and recommend sessions with him."</p>
+        <div class="offer-card testimonial-card">
+          <p>"I had my first ever Rebirthing Breathwork session with Justus and it was really transformative. He made me feel completely safe and held throughout and is so intuitive in the way he approaches sessions, knowing when to offer guidance and when to let it flow, and it created a really profound experience for me. Even the care taken before and after the session was carefully considered and I would absolutely trust Justus and recommend sessions with him."</p>
           <div class="meta">Rebirthing Breathwork client</div>
         </div>
         <div class="offer-card">
@@ -133,25 +135,7 @@
     RedNote: FollowingBreath (ID 18778811369)
   </footer>
 
-  <script>
-    (function () {
-      var toggle = document.getElementById('themeToggle');
-      var root = document.body;
-      function apply(theme) {
-        root.setAttribute('data-theme', theme);
-        toggle.textContent = theme === 'dark' ? 'Day' : 'Night';
-      }
-      var saved = 'light';
-      try { saved = localStorage.getItem('fb-theme') || 'light'; } catch (e) {}
-      apply(saved);
-      toggle.addEventListener('click', function () {
-        var current = root.getAttribute('data-theme');
-        var next = current === 'dark' ? 'light' : 'dark';
-        apply(next);
-        try { localStorage.setItem('fb-theme', next); } catch (e) {}
-      });
-    })();
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>

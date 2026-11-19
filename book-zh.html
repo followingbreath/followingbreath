@@ -18,7 +18,9 @@
       <a href="index-zh.html">首页</a>
       <a href="about-zh.html">关于我</a>
       <a href="offers-zh.html">课程与价格</a>
-      <a href="book-zh.html" class="active">预约课程</a>
+      <a href="index-zh.html#current">近期</a>
+      <a href="index-zh.html#faq">常见问题</a>
+      <a href="book-zh.html" class="nav-cta active">预约课程</a>
     </nav>
     <div class="lang-switch">
       <a href="book.html">EN</a> ·
@@ -72,7 +74,41 @@
         了解你所在地区目前的可预约情况。如果这是你第一次参加，请在
         预约时告诉我，这样我可以相应地调整节奏。
       </p>
+      <p>
+        近期安排:12 月 3 日至 10 日,我将在摩洛哥参加呼吸疗愈培训
+        (Level 1),因此这段时间线下课程的可预约时间有限。请联系我,
+        我们一起找一个合适的时间。
+      </p>
       <img class="site-photo wide" src="photos/book-wide.jpg" alt="一个让人安心的、课前可以静下来的空间">
+    </section>
+
+    <section>
+      <h2>有个小问题?</h2>
+      <p>
+        不需要专门预约一通电话来问问题,留言给我,我会通过邮件回复你。
+      </p>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="2c7c0466-bd98-4783-8f4f-63eadd674a49">
+        <input type="hidden" name="subject" value="来自 Following Breath 网站的新留言">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div>
+          <label for="contact-name-zh">姓名</label>
+          <input type="text" id="contact-name-zh" name="name" required>
+        </div>
+
+        <div>
+          <label for="contact-email-zh">邮箱</label>
+          <input type="email" id="contact-email-zh" name="email" required>
+        </div>
+
+        <div>
+          <label for="contact-message-zh">留言内容</label>
+          <textarea id="contact-message-zh" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">发送留言</button>
+      </form>
     </section>
 
     <section>
@@ -93,19 +129,25 @@
 
       <div class="faq-item">
         <h3>Rebirthing 呼吸疗愈安全吗？</h3>
-        <p>这是一种比较强烈的练习，因此这些课程会刻意控制在小规模
-        (3 到 4 人)、只在线下进行，并且会被密切引导。课程与价格
-        页面上也列出了一些需要注意的健康状况，建议先看看那里，
-        并在预约时告诉我任何相关的健康情况。</p>
+        <p>对绝大多数人来说是安全的。这是一种有意设计得比较强烈的
+        练习,正因如此,我会刻意把这些课程控制在小规模(3 到 4 人)、
+        安排在线下进行,并全程密切引导,正是这样的结构,才能让人
+        安全地抵达一种更深的释放,而这是更温和的呼吸方式常常无法
+        达到的。课程与价格页面上列出了一些需要留意的健康状况,
+        如果其中有适用于你的情况,并不代表就不能做这项练习,只是
+        意味着我们需要调整合作的方式。如果你好奇为什么这样的呼吸
+        方式会有这样的效果,可以在<a href="index-zh.html#faq">首页的
+        常见问题</a>里看到更多相关研究。</p>
       </div>
 
       <div class="faq-item">
         <h3>为什么 Rebirthing 呼吸疗愈只能线下进行？</h3>
-        <p>它的强度和可能带来的体验足够深,因此从第一节课开始就需要
-        直接的线下陪伴才能保证安全,而不只是到了完整系列才需要。
-        身体上的共同在场也能带来更贴近、更及时的引导，以及一种
-        屏幕上很难完全做到的安全感。课程与价格页面上的调息法、
-        调息法、瑜伽与冥想，依然可以线上进行，如果这样更适合你。</p>
+        <p>身体上的共同在场,能让我更贴近、更及时地引导你,实时读懂
+        你的呼吸和身体状态,这也是为什么这项练习带来的释放往往更深、
+        持续更久的重要原因之一。而这种贴近恰恰在体验变得强烈时最为
+        关键,这也是为什么从第一节课开始就需要线下进行,而不只是到
+        完整系列才需要。课程与价格页面上的 Connected Breath、调息法、
+        瑜伽与冥想,依然可以线上进行,如果这样更适合你。</p>
       </div>
 
       <div class="faq-item">
@@ -124,32 +166,7 @@
     小红书: FollowingBreath (ID 18778811369)
   </footer>
 
-  <script>
-    (function () {
-      var toggle = document.getElementById('themeToggle');
-      var root = document.body;
-
-      function apply(theme) {
-        root.setAttribute('data-theme', theme);
-        toggle.textContent = theme === 'dark' ? '日间' : '夜间';
-      }
-
-      var saved = 'light';
-      try {
-        saved = localStorage.getItem('fb-theme') || 'light';
-      } catch (e) {}
-      apply(saved);
-
-      toggle.addEventListener('click', function () {
-        var current = root.getAttribute('data-theme');
-        var next = current === 'dark' ? 'light' : 'dark';
-        apply(next);
-        try {
-          localStorage.setItem('fb-theme', next);
-        } catch (e) {}
-      });
-    })();
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>

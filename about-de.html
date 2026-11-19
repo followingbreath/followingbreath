@@ -18,7 +18,9 @@
       <a href="index-de.html">Startseite</a>
       <a href="about-de.html" class="active">Über mich</a>
       <a href="offers-de.html">Angebote</a>
-      <a href="book-de.html">Session buchen</a>
+      <a href="index-de.html#current">Aktuell</a>
+      <a href="index-de.html#faq">FAQ</a>
+      <a href="book-de.html" class="nav-cta">Session buchen</a>
     </nav>
     <div class="lang-switch">
       <a href="about.html">EN</a> ·
@@ -70,8 +72,8 @@
     <section>
       <h2>Was andere sagen</h2>
       <div class="offer-grid">
-        <div class="offer-card">
-          <p style="font-style: italic;">"Ich hatte meine allererste Rebirthing-Atemarbeit-Session mit Justus, und sie war wirklich transformativ. Er hat mir die ganze Zeit ein völlig sicheres und gehaltenes Gefühl gegeben und geht so intuitiv auf die Session ein, dass er genau weiß, wann er Orientierung geben und wann er einfach fließen lassen sollte, wodurch eine wirklich tiefgehende Erfahrung für mich entstanden ist. Selbst die Fürsorge vor und nach der Session war sehr durchdacht, und ich würde Justus und Sessions mit ihm absolut vertrauen und weiterempfehlen."</p>
+        <div class="offer-card testimonial-card">
+          <p>"Ich hatte meine allererste Rebirthing-Atemarbeit-Session mit Justus, und sie war wirklich transformativ. Er hat mir die ganze Zeit ein völlig sicheres und gehaltenes Gefühl gegeben und geht so intuitiv auf die Session ein, dass er genau weiß, wann er Orientierung geben und wann er einfach fließen lassen sollte, wodurch eine wirklich tiefgehende Erfahrung für mich entstanden ist. Selbst die Fürsorge vor und nach der Session war sehr durchdacht, und ich würde Justus und Sessions mit ihm absolut vertrauen und weiterempfehlen."</p>
           <div class="meta">Rebirthing-Atemarbeit-Klient:in</div>
         </div>
         <div class="offer-card">
@@ -136,25 +138,7 @@
     RedNote: FollowingBreath (ID 18778811369)
   </footer>
 
-  <script>
-    (function () {
-      var toggle = document.getElementById('themeToggle');
-      var root = document.body;
-      function apply(theme) {
-        root.setAttribute('data-theme', theme);
-        toggle.textContent = theme === 'dark' ? 'Tag' : 'Nacht';
-      }
-      var saved = 'light';
-      try { saved = localStorage.getItem('fb-theme') || 'light'; } catch (e) {}
-      apply(saved);
-      toggle.addEventListener('click', function () {
-        var current = root.getAttribute('data-theme');
-        var next = current === 'dark' ? 'light' : 'dark';
-        apply(next);
-        try { localStorage.setItem('fb-theme', next); } catch (e) {}
-      });
-    })();
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>

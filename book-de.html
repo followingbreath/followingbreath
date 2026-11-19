@@ -18,7 +18,9 @@
       <a href="index-de.html">Startseite</a>
       <a href="about-de.html">Über mich</a>
       <a href="offers-de.html">Angebote</a>
-      <a href="book-de.html" class="active">Session buchen</a>
+      <a href="index-de.html#current">Aktuell</a>
+      <a href="index-de.html#faq">FAQ</a>
+      <a href="book-de.html" class="nav-cta active">Session buchen</a>
     </nav>
     <div class="lang-switch">
       <a href="book.html">EN</a> ·
@@ -77,7 +79,44 @@
         der Buchung, damit das Tempo
         entsprechend angepasst werden kann.
       </p>
+      <p>
+        Aktuell: Vom 3. bis 10. Dezember bin ich bei einer Breathwork
+        Training Level 1 in Marokko, Vor-Ort-Termine sind in dieser
+        Woche daher begrenzt. Melde dich, dann finden wir einen Termin,
+        der passt.
+      </p>
       <img class="site-photo wide" src="photos/book-wide.jpg" alt="Ein ruhiger Ort zum Ankommen vor einer Session">
+    </section>
+
+    <section>
+      <h2>Eine kurze Frage?</h2>
+      <p>
+        Du musst nicht gleich einen Anruf buchen, nur um etwas zu
+        fragen, schreib mir einfach eine Nachricht und ich melde mich
+        per E-Mail zurück.
+      </p>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="2c7c0466-bd98-4783-8f4f-63eadd674a49">
+        <input type="hidden" name="subject" value="Neue Nachricht von der Following Breath Website">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div>
+          <label for="contact-name-de">Name</label>
+          <input type="text" id="contact-name-de" name="name" required>
+        </div>
+
+        <div>
+          <label for="contact-email-de">E-Mail</label>
+          <input type="email" id="contact-email-de" name="email" required>
+        </div>
+
+        <div>
+          <label for="contact-message-de">Nachricht</label>
+          <textarea id="contact-message-de" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Nachricht senden</button>
+      </form>
     </section>
 
     <section>
@@ -95,12 +134,12 @@
 
       <div class="faq-item">
         <h3>Ist Rebirthing Atemarbeit sicher?</h3>
-        <p>Es ist eine intensivere Praxis, deshalb werden diese Sessions bewusst klein gehalten (3 bis 4 Personen) und eng begleitet. Teile mir relevante gesundheitliche Themen bei der Buchung mit.</p>
+        <p>Ja, für die allermeisten Menschen. Es ist eine bewusst intensive Praxis, genau deshalb halte ich diese Sessions klein (3 bis 4 Personen), biete sie vor Ort an und begleite dich eng dabei, dieselbe Struktur, die es möglich macht, sicher zu einer Tiefe des Loslassens zu kommen, die sanfteres Atmen allein nicht immer erreicht. Es gibt eine kurze Liste gesundheitlicher Themen auf der Angebotsseite, die gut zu kennen sind; falls etwas davon auf dich zutrifft, schließt das die Arbeit nicht aus, es bedeutet nur, dass wir anpassen, wie wir zusammenarbeiten. Wenn dich interessiert, warum intensives Atmen überhaupt so wirken kann, findest du mehr zur Forschung dahinter in den <a href="index-de.html#faq">FAQ auf der Startseite</a>.</p>
       </div>
 
       <div class="faq-item">
         <h3>Warum findet Rebirthing Atemarbeit nur vor Ort statt?</h3>
-        <p>Es ist intensiv genug, und kann genug aufbringen, dass es von der allerersten Session an direkte, persönliche Begleitung braucht, um sicher zu sein, nicht erst ab der vollständigen Reihe. Körperliche Anwesenheit ermöglicht außerdem eine engere, feinfühligere Begleitung und ein Maß an Sicherheit, das sich über einen Bildschirm kaum herstellen lässt. Connected Breath, Pranayama, Yoga und Meditation auf der Angebotsseite sind weiterhin online verfügbar, falls dir das besser passt.</p>
+        <p>Körperliche Anwesenheit lässt mich dich viel enger und feinfühliger begleiten, als es über einen Bildschirm möglich wäre, ich lese deinen Atem und Körper in Echtzeit, und das ist ein großer Teil davon, warum das Loslassen durch diese Arbeit tiefer geht und länger anhält. Genau diese Nähe zählt am meisten, wenn es intensiv wird, deshalb ist es von der allerersten Session an vor Ort, nicht erst ab der vollständigen Reihe. Connected Breath, Pranayama, Yoga und Meditation auf der Angebotsseite sind weiterhin online verfügbar, falls dir das besser passt.</p>
       </div>
 
       <div class="faq-item">
@@ -118,25 +157,7 @@
     RedNote: FollowingBreath (ID 18778811369)
   </footer>
 
-  <script>
-    (function () {
-      var toggle = document.getElementById('themeToggle');
-      var root = document.body;
-      function apply(theme) {
-        root.setAttribute('data-theme', theme);
-        toggle.textContent = theme === 'dark' ? 'Tag' : 'Nacht';
-      }
-      var saved = 'light';
-      try { saved = localStorage.getItem('fb-theme') || 'light'; } catch (e) {}
-      apply(saved);
-      toggle.addEventListener('click', function () {
-        var current = root.getAttribute('data-theme');
-        var next = current === 'dark' ? 'light' : 'dark';
-        apply(next);
-        try { localStorage.setItem('fb-theme', next); } catch (e) {}
-      });
-    })();
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>

@@ -18,7 +18,9 @@
       <a href="index-zh.html">首页</a>
       <a href="about-zh.html" class="active">关于我</a>
       <a href="offers-zh.html">课程与价格</a>
-      <a href="book-zh.html">预约课程</a>
+      <a href="index-zh.html#current">近期</a>
+      <a href="index-zh.html#faq">常见问题</a>
+      <a href="book-zh.html" class="nav-cta">预约课程</a>
     </nav>
     <div class="lang-switch">
       <a href="about.html">EN</a> ·
@@ -66,8 +68,8 @@
     <section>
       <h2>学员怎么说</h2>
       <div class="offer-grid">
-        <div class="offer-card">
-          <p style="font-style: italic;">"这是我第一次和 Justus 做 Rebirthing 呼吸疗愈，整个过程真的很有转化力。他让我全程感到完全安全、被稳稳地支撑着，而且他对课程的把握非常敏锐，知道什么时候该引导、什么时候该让一切自然流动，这为我带来了一次非常深刻的体验。就连课程前后的用心照顾也都考虑得很周到，我会完全信任 Justus，并推荐大家和他一起做疗愈课程。"</p>
+        <div class="offer-card testimonial-card">
+          <p>"这是我第一次和 Justus 做 Rebirthing 呼吸疗愈，整个过程真的很有转化力。他让我全程感到完全安全、被稳稳地支撑着，而且他对课程的把握非常敏锐，知道什么时候该引导、什么时候该让一切自然流动，这为我带来了一次非常深刻的体验。就连课程前后的用心照顾也都考虑得很周到，我会完全信任 Justus，并推荐大家和他一起做疗愈课程。"</p>
           <div class="meta">Rebirthing 呼吸疗愈学员</div>
         </div>
         <div class="offer-card">
@@ -122,25 +124,7 @@
     小红书: FollowingBreath (ID 18778811369)
   </footer>
 
-  <script>
-    (function () {
-      var toggle = document.getElementById('themeToggle');
-      var root = document.body;
-      function apply(theme) {
-        root.setAttribute('data-theme', theme);
-        toggle.textContent = theme === 'dark' ? '日间' : '夜间';
-      }
-      var saved = 'light';
-      try { saved = localStorage.getItem('fb-theme') || 'light'; } catch (e) {}
-      apply(saved);
-      toggle.addEventListener('click', function () {
-        var current = root.getAttribute('data-theme');
-        var next = current === 'dark' ? 'light' : 'dark';
-        apply(next);
-        try { localStorage.setItem('fb-theme', next); } catch (e) {}
-      });
-    })();
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
