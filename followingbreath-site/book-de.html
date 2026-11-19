@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session buchen | Following Breath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Fraunces:ital,wght@0,400;0,500;1,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+
+  <header>
+    <div class="brand"><img src="photos/logo.png" alt="" class="brand-mark">Following <span>Breath</span></div>
+    <nav>
+      <a href="index-de.html">Startseite</a>
+      <a href="about-de.html">Über mich</a>
+      <a href="offers-de.html">Angebote</a>
+      <a href="index-de.html#current">Aktuell</a>
+      <a href="index-de.html#faq">FAQ</a>
+      <a href="book-de.html" class="nav-cta active">Session buchen</a>
+    </nav>
+    <div class="lang-switch">
+      <a href="book.html">EN</a> ·
+      <a href="book-de.html" class="active">DE</a> ·
+      <a href="book-zh.html">中文</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle">Nacht</button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Session buchen</h1>
+      <p class="lede">
+        Wähle einen Termin, der dir passt, und den Rest übernehmen wir.
+      </p>
+
+      <svg class="tide-line" viewBox="0 0 400 28" preserveAspectRatio="none">
+        <path d="M0,14 C40,2 80,26 120,14 C160,2 200,26 240,14 C280,2 320,26 360,14 C380,8 390,20 400,14" />
+      </svg>
+    </section>
+
+    <section>
+      <div class="booking-box">
+        <h2 style="margin-bottom: 0.5rem;">Bereit, wenn du es bist</h2>
+        <p style="margin: 0 auto;">
+          Klicke unten, um freie Termine zu sehen und direkt über Calendly
+          zu buchen.
+        </p>
+
+        <a href="https://calendly.com/followingbreath/30min" class="btn btn-primary" id="bookingLink" target="_blank" rel="noopener">
+          Verfügbare Termine ansehen
+        </a>
+
+        <div class="contact-list">
+          Lieber per E-Mail? Schreib mir direkt an
+          <a href="mailto:followingbreath@gmail.com">followingbreath@gmail.com</a>
+          <br>
+          Oder finde mich auf Instagram
+          <a href="https://instagram.com/followingbreath" target="_blank" rel="noopener">@followingbreath</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Gut zu wissen</h2>
+      <p>
+        Connected Breath, Pranayama, Yoga und Meditation finden meist
+        online statt, du brauchst nur einen ruhigen Ort und eine
+        stabile Internetverbindung. Rebirthing Atemarbeit ist die eine
+        Ausnahme, von einer Einzelsession bis zur vollständigen
+        Transformationsreihe findet das ausschließlich vor Ort statt,
+        an Orten, die davon abhängen, wo ich mich gerade befinde oder
+        hinreise. Melde dich, um die aktuelle Verfügbarkeit in deiner
+        Nähe zu erfragen. Wenn es dein erstes Mal ist, erwähne das bei
+        der Buchung, damit das Tempo
+        entsprechend angepasst werden kann.
+      </p>
+      <p>
+        Aktuell: Vom 3. bis 10. Dezember bin ich bei einer Breathwork
+        Training Level 1 in Marokko, Vor-Ort-Termine sind in dieser
+        Woche daher begrenzt. Melde dich, dann finden wir einen Termin,
+        der passt.
+      </p>
+      <img class="site-photo wide" src="photos/book-wide.jpg" alt="Ein ruhiger Ort zum Ankommen vor einer Session">
+    </section>
+
+    <section>
+      <h2>Eine kurze Frage?</h2>
+      <p>
+        Du musst nicht gleich einen Anruf buchen, nur um etwas zu
+        fragen, schreib mir einfach eine Nachricht und ich melde mich
+        per E-Mail zurück.
+      </p>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="2c7c0466-bd98-4783-8f4f-63eadd674a49">
+        <input type="hidden" name="subject" value="Neue Nachricht von der Following Breath Website">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div>
+          <label for="contact-name-de">Name</label>
+          <input type="text" id="contact-name-de" name="name" required>
+        </div>
+
+        <div>
+          <label for="contact-email-de">E-Mail</label>
+          <input type="email" id="contact-email-de" name="email" required>
+        </div>
+
+        <div>
+          <label for="contact-message-de">Nachricht</label>
+          <textarea id="contact-message-de" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Nachricht senden</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Häufige Fragen</h2>
+
+      <div class="faq-item">
+        <h3>Brauche ich Vorerfahrung?</h3>
+        <p>Nein. Jede Session, auch die Connected Breath Session, ist für absolute Anfänger geeignet.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Was brauche ich für eine Online Session?</h3>
+        <p>Einen ruhigen, privaten Ort, an dem du bequem liegen oder sitzen kannst, eine stabile Internetverbindung und etwas Platz zum Bewegen, falls nötig. Eine Yogamatte oder ein Kissen helfen, sind aber nicht erforderlich.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Ist Rebirthing Atemarbeit sicher?</h3>
+        <p>Ja, für die allermeisten Menschen. Es ist eine bewusst intensive Praxis, genau deshalb halte ich diese Sessions klein (3 bis 4 Personen), biete sie vor Ort an und begleite dich eng dabei, dieselbe Struktur, die es möglich macht, sicher zu einer Tiefe des Loslassens zu kommen, die sanfteres Atmen allein nicht immer erreicht. Es gibt eine kurze Liste gesundheitlicher Themen auf der Angebotsseite, die gut zu kennen sind; falls etwas davon auf dich zutrifft, schließt das die Arbeit nicht aus, es bedeutet nur, dass wir anpassen, wie wir zusammenarbeiten. Wenn dich interessiert, warum intensives Atmen überhaupt so wirken kann, findest du mehr zur Forschung dahinter in den <a href="index-de.html#faq">FAQ auf der Startseite</a>.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Warum findet Rebirthing Atemarbeit nur vor Ort statt?</h3>
+        <p>Körperliche Anwesenheit lässt mich dich viel enger und feinfühliger begleiten, als es über einen Bildschirm möglich wäre, ich lese deinen Atem und Körper in Echtzeit, und das ist ein großer Teil davon, warum das Loslassen durch diese Arbeit tiefer geht und länger anhält. Genau diese Nähe zählt am meisten, wenn es intensiv wird, deshalb ist es von der allerersten Session an vor Ort, nicht erst ab der vollständigen Reihe. Connected Breath, Pranayama, Yoga und Meditation auf der Angebotsseite sind weiterhin online verfügbar, falls dir das besser passt.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Kann ich eine Gruppensession buchen?</h3>
+        <p>Ja, Gruppensessions sind für die meisten Angebote möglich. Nenne bei deiner Anfrage einfach die Gruppengröße, dann finden wir eine passende Lösung.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Following Breath &middot; followingbreath@gmail.com<br>
+    <a href="https://instagram.com/followingbreath" target="_blank" rel="noopener">Instagram</a> &middot;
+    <a href="https://www.tiktok.com/@followingbreath" target="_blank" rel="noopener">TikTok</a> &middot;
+    RedNote: FollowingBreath (ID 18778811369)
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

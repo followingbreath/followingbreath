@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>预约课程 | Following Breath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Fraunces:ital,wght@0,400;0,500;1,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+
+  <header>
+    <div class="brand"><img src="photos/logo.png" alt="" class="brand-mark">Following <span>Breath</span></div>
+    <nav>
+      <a href="index-zh.html">首页</a>
+      <a href="about-zh.html">关于我</a>
+      <a href="offers-zh.html">课程与价格</a>
+      <a href="index-zh.html#current">近期</a>
+      <a href="index-zh.html#faq">常见问题</a>
+      <a href="book-zh.html" class="nav-cta active">预约课程</a>
+    </nav>
+    <div class="lang-switch">
+      <a href="book.html">EN</a> ·
+      <a href="book-de.html">DE</a> ·
+      <a href="book-zh.html" class="active">中文</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle">夜间</button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>预约课程</h1>
+      <p class="lede">
+        选一个适合你的时间，剩下的交给我们。
+      </p>
+
+      <svg class="tide-line" viewBox="0 0 400 28" preserveAspectRatio="none">
+        <path d="M0,14 C40,2 80,26 120,14 C160,2 200,26 240,14 C280,2 320,26 360,14 C380,8 390,20 400,14" />
+      </svg>
+    </section>
+
+    <section>
+      <div class="booking-box">
+        <h2 style="margin-bottom: 0.5rem;">准备好了吗</h2>
+        <p style="margin: 0 auto;">
+          点击下方查看空闲时间，直接通过 Calendly 预约。
+        </p>
+
+        <a href="https://calendly.com/followingbreath/30min" class="btn btn-primary" id="bookingLink" target="_blank" rel="noopener">
+          查看可预约时间
+        </a>
+
+        <div class="contact-list">
+          更喜欢用邮件联系？可以直接写信到
+          <a href="mailto:followingbreath@gmail.com">followingbreath@gmail.com</a>
+          <br>
+          或者在 Instagram 上找到我
+          <a href="https://instagram.com/followingbreath" target="_blank" rel="noopener">@followingbreath</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>一些须知</h2>
+      <p>
+        Connected Breath、调息法、瑜伽与冥想大多在线上进行，你只
+        需要一个安静的空间和稳定的网络连接。Rebirthing 呼吸疗愈是
+        唯一的例外，从单次课程到完整的蜕变系列,都只在线下进行，
+        地点取决于我当时所在或旅行到的地方。请联系我，
+        了解你所在地区目前的可预约情况。如果这是你第一次参加，请在
+        预约时告诉我，这样我可以相应地调整节奏。
+      </p>
+      <p>
+        近期安排:12 月 3 日至 10 日,我将在摩洛哥参加呼吸疗愈培训
+        (Level 1),因此这段时间线下课程的可预约时间有限。请联系我,
+        我们一起找一个合适的时间。
+      </p>
+      <img class="site-photo wide" src="photos/book-wide.jpg" alt="一个让人安心的、课前可以静下来的空间">
+    </section>
+
+    <section>
+      <h2>有个小问题?</h2>
+      <p>
+        不需要专门预约一通电话来问问题,留言给我,我会通过邮件回复你。
+      </p>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="2c7c0466-bd98-4783-8f4f-63eadd674a49">
+        <input type="hidden" name="subject" value="来自 Following Breath 网站的新留言">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div>
+          <label for="contact-name-zh">姓名</label>
+          <input type="text" id="contact-name-zh" name="name" required>
+        </div>
+
+        <div>
+          <label for="contact-email-zh">邮箱</label>
+          <input type="email" id="contact-email-zh" name="email" required>
+        </div>
+
+        <div>
+          <label for="contact-message-zh">留言内容</label>
+          <textarea id="contact-message-zh" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">发送留言</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>常见问题</h2>
+
+      <div class="faq-item">
+        <h3>我需要有经验吗？</h3>
+        <p>不需要。包括 Connected Breath 课程在内的每一节课,都完全
+        适合从未接触过的新手。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>上线上课程需要准备什么？</h3>
+        <p>一个安静、私密、可以舒服地躺下或坐着的空间，稳定的网络
+        连接，以及一些可以活动的空间(如果需要的话)。有瑜伽垫或
+        靠垫会更舒服，但不是必须的。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Rebirthing 呼吸疗愈安全吗？</h3>
+        <p>对绝大多数人来说是安全的。这是一种有意设计得比较强烈的
+        练习,正因如此,我会刻意把这些课程控制在小规模(3 到 4 人)、
+        安排在线下进行,并全程密切引导,正是这样的结构,才能让人
+        安全地抵达一种更深的释放,而这是更温和的呼吸方式常常无法
+        达到的。课程与价格页面上列出了一些需要留意的健康状况,
+        如果其中有适用于你的情况,并不代表就不能做这项练习,只是
+        意味着我们需要调整合作的方式。如果你好奇为什么这样的呼吸
+        方式会有这样的效果,可以在<a href="index-zh.html#faq">首页的
+        常见问题</a>里看到更多相关研究。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>为什么 Rebirthing 呼吸疗愈只能线下进行？</h3>
+        <p>身体上的共同在场,能让我更贴近、更及时地引导你,实时读懂
+        你的呼吸和身体状态,这也是为什么这项练习带来的释放往往更深、
+        持续更久的重要原因之一。而这种贴近恰恰在体验变得强烈时最为
+        关键,这也是为什么从第一节课开始就需要线下进行,而不只是到
+        完整系列才需要。课程与价格页面上的 Connected Breath、调息法、
+        瑜伽与冥想,依然可以线上进行,如果这样更适合你。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>我可以预约小组课程吗？</h3>
+        <p>可以，大部分课程都支持小组形式。联系我时告诉我你的小组
+        人数，我们会一起找到合适的方式。</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Following Breath &middot; followingbreath@gmail.com<br>
+    <a href="https://instagram.com/followingbreath" target="_blank" rel="noopener">Instagram</a> &middot;
+    <a href="https://www.tiktok.com/@followingbreath" target="_blank" rel="noopener">TikTok</a> &middot;
+    小红书: FollowingBreath (ID 18778811369)
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Session | Following Breath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Fraunces:ital,wght@0,400;0,500;1,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+
+  <header>
+    <div class="brand"><img src="photos/logo.png" alt="" class="brand-mark">Following <span>Breath</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="offers.html">Offers</a>
+      <a href="index.html#current">Current</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="book.html" class="nav-cta active">Book a Session</a>
+    </nav>
+    <div class="lang-switch">
+      <a href="book.html" class="active">EN</a> ·
+      <a href="book-de.html">DE</a> ·
+      <a href="book-zh.html">中文</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle">Night</button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Book a Session</h1>
+      <p class="lede">
+        Pick a time that works for you and we'll take it from there.
+      </p>
+
+      <svg class="tide-line" viewBox="0 0 400 28" preserveAspectRatio="none">
+        <path d="M0,14 C40,2 80,26 120,14 C160,2 200,26 240,14 C280,2 320,26 360,14 C380,8 390,20 400,14" />
+      </svg>
+    </section>
+
+    <section>
+      <div class="booking-box">
+        <h2 style="margin-bottom: 0.5rem;">Ready when you are</h2>
+        <p style="margin: 0 auto;">
+          Click below to see open times and book directly through Calendly.
+        </p>
+
+        <a href="https://calendly.com/followingbreath/30min" class="btn btn-primary" id="bookingLink" target="_blank" rel="noopener">
+          See Available Times
+        </a>
+
+        <div class="contact-list">
+          Prefer email? Reach out directly at
+          <a href="mailto:followingbreath@gmail.com">followingbreath@gmail.com</a>
+          <br>
+          Or find me on Instagram
+          <a href="https://instagram.com/followingbreath" target="_blank" rel="noopener">@followingbreath</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Good to know</h2>
+      <p>
+        Connected Breath, pranayama, yoga, and meditation are usually
+        held online, all you need is a quiet space and a stable
+        internet connection. Rebirthing Breathwork is the one
+        exception, from a single session through the full
+        Transformation Series, it's held in person only, at locations
+        depending on where I'm currently based or traveling. Get in
+        touch to check current availability near you. If this is your
+        first time, mention that when you book so the session can be
+        paced accordingly.
+      </p>
+      <p>
+        Currently: I'll be at a Breathwork Training, Level 1, in
+        Morocco from December 3 to 10, so in-person bookings are
+        limited that week. Get in touch and we'll find a time that
+        works.
+      </p>
+      <img class="site-photo wide" src="photos/book-wide.jpg" alt="A calm space to settle into before a session">
+    </section>
+
+    <section>
+      <h2>Have a Quick Question?</h2>
+      <p>
+        No need to book a call just to ask something, send a message
+        and I'll get back to you by email.
+      </p>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="2c7c0466-bd98-4783-8f4f-63eadd674a49">
+        <input type="hidden" name="subject" value="New message from the Following Breath website">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div>
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" required>
+        </div>
+
+        <div>
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" required>
+        </div>
+
+        <div>
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Frequently Asked</h2>
+
+      <div class="faq-item">
+        <h3>Do I need any experience?</h3>
+        <p>No. Every session, including the Connected Breath Session, is open to complete beginners.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What do I need for an online session?</h3>
+        <p>A quiet, private space where you can lie or sit comfortably, a stable internet connection, and a bit of room to move if needed. A yoga mat or cushion helps but isn't required.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Is rebirthing breathwork safe?</h3>
+        <p>Yes, for the vast majority of people. It's an intentionally intense practice, which is exactly why I keep those sessions small (3 to 4 people), hold them in person, and guide you closely throughout, the same structure that lets people safely reach a depth of release that gentler breathing alone doesn't always get to. There's a short list of health conditions worth knowing about on the Offers page; if any apply to you, it doesn't rule the work out, it just means we adapt how we work together. If you're curious why breathing this way can have this kind of effect at all, there's more on the research behind it in the <a href="index.html#faq">FAQ on the homepage</a>.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Why is Rebirthing Breathwork in person only?</h3>
+        <p>Being physically present together lets me guide you far more closely and responsively than a screen allows, reading your breath and body in real time, which is a big part of why the release this work brings about tends to go deeper and last. That closeness matters most exactly when things get intense, which is why it's in person from the very first session, not only once you reach the full series. Connected Breath, pranayama, yoga, and meditation on the Offers page are all available online if that suits you better.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I book a group session?</h3>
+        <p>Yes, group sessions are available for most offers. Mention your group size when you reach out and we'll find a fit.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Following Breath &middot; followingbreath@gmail.com<br>
+    <a href="https://instagram.com/followingbreath" target="_blank" rel="noopener">Instagram</a> &middot;
+    <a href="https://www.tiktok.com/@followingbreath" target="_blank" rel="noopener">TikTok</a> &middot;
+    RedNote: FollowingBreath (ID 18778811369)
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
