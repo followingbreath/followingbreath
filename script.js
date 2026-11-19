@@ -67,4 +67,32 @@
       }
     });
   });
+
+  // ---- "Right Now" items: each <li> can carry data-from and/or
+  // data-until (YYYY-MM-DD). Anything outside that window today gets
+  // hidden automatically, no manual cleanup needed. If every item in
+  // a given box ends up hidden, the whole box hides itself rather
+  // than showing an empty "Right Now" with nothing under it. To add
+  // something new, just add a new <li> with its own dates (or none,
+  // for something open ended) in the HTML.
+  var currentLists = document.querySelectorAll('.current-list');
+  currentLists.forEach(function (list) {
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    var items = list.querySelectorAll('li');
+    var anyVisible = false;
+
+    items.forEach(function (li) {
+      var from = li.getAttribute('data-from');
+      var until = li.getAttribute('data-until');
+      var show = true;
+      if (from && today < new Date(from + 'T00:00:00')) show = false;
+      if (until && today > new Date(until + 'T00:00:00')) show = false;
+      li.style.display = show ? '' : 'none';
+      if (show) anyVisible = true;
+    });
+
+    var box = list.closest('.current-box');
+    if (box) box.style.display = anyVisible ? '' : 'none';
+  });
 })();
