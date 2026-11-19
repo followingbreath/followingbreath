@@ -653,6 +653,7 @@ img.site-photo.wide {
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
+.contact-form select,
 .contact-form textarea {
   width: 100%;
   font-family: 'Work Sans', sans-serif;
@@ -665,6 +666,7 @@ img.site-photo.wide {
 }
 
 .contact-form input:focus,
+.contact-form select:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: var(--accent);

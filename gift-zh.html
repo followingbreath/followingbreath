@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>赠送课程 | Following Breath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Fraunces:ital,wght@0,400;0,500;1,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light" class="offers-page">
+
+  <header>
+    <div class="brand"><img src="photos/logo.png" alt="" class="brand-mark">Following <span>Breath</span></div>
+    <nav>
+      <a href="index-zh.html">首页</a>
+      <a href="about-zh.html">关于我</a>
+      <a href="offers-zh.html">课程与价格</a>
+      <a href="gift-zh.html" class="active">送礼</a>
+      <a href="index-zh.html#current">近期</a>
+      <a href="index-zh.html#faq">常见问题</a>
+      <a href="book-zh.html" class="nav-cta">预约课程</a>
+    </nav>
+    <div class="lang-switch">
+      <a href="gift.html">EN</a> ·
+      <a href="gift-de.html">DE</a> ·
+      <a href="gift-zh.html" class="active">中文</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle">夜间</button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>赠送一节课程</h1>
+      <p class="lede">
+        由你挑选的一节课程,对方可以在准备好的时候使用。
+      </p>
+
+      <svg class="tide-line" viewBox="0 0 400 28" preserveAspectRatio="none">
+        <path d="M0,14 C40,2 80,26 120,14 C160,2 200,26 240,14 C280,2 320,26 360,14 C380,8 390,20 400,14" />
+      </svg>
+
+      <img class="site-photo hero-img" src="photos/home-detail.jpg" alt="练习空间里安静的一刻">
+    </section>
+
+    <section>
+      <h2>使用方式</h2>
+      <ol class="note-list">
+        <li>
+          浏览<a href="offers-zh.html">课程与价格</a>页面,选一项课程,
+          如果拿不定主意,也可以交给我来推荐。
+        </li>
+        <li>
+          在下方填写详细信息:是送给谁的、你心里想的是什么,以及你
+          需要在什么时候之前拿到。
+        </li>
+        <li>
+          我会准备好礼品券,并发送给你,可以通过邮件,也可以打印
+          出来当面送出,看你更方便哪种方式。
+        </li>
+      </ol>
+      <p>
+        由于圣诞节临近,建议尽快联系我,这样才有足够的时间安排
+        细节。
+      </p>
+    </section>
+
+    <section>
+      <h2>申请礼品券</h2>
+      <p>
+        这里不涉及付款,只需填写以下信息,我会直接与你联系,安排
+        后续事宜。
+      </p>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="2c7c0466-bd98-4783-8f4f-63eadd674a49">
+        <input type="hidden" name="subject" value="来自网站的新礼品券申请">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+        <div>
+          <label for="gift-name-zh">你的姓名</label>
+          <input type="text" id="gift-name-zh" name="name" required>
+        </div>
+        <div>
+          <label for="gift-email-zh">你的邮箱</label>
+          <input type="email" id="gift-email-zh" name="email" required>
+        </div>
+        <div>
+          <label for="gift-recipient-zh">送给谁(可选)</label>
+          <input type="text" id="gift-recipient-zh" name="recipient">
+        </div>
+        <div>
+          <label for="gift-offering-zh">你心里想的课程</label>
+          <select id="gift-offering-zh" name="offering">
+            <option value="还不确定">还不确定,希望得到推荐</option>
+            <option value="Connected Breath 课程">Connected Breath 课程</option>
+            <option value="神经系统重启">神经系统重启</option>
+            <option value="调息法">调息法(Pranayama)</option>
+            <option value="Rebirthing 呼吸疗愈（仅线下）">Rebirthing 呼吸疗愈(仅线下)</option>
+            <option value="哈他或阴瑜伽">哈他或阴瑜伽</option>
+            <option value="音疗">音疗</option>
+            <option value="其他">其他,我会在下方说明</option>
+          </select>
+        </div>
+        <div>
+          <label for="gift-by-zh">需要在何时之前拿到(可选)</label>
+          <input type="text" id="gift-by-zh" name="needed_by" placeholder="例如:12 月 24 日之前">
+        </div>
+        <div>
+          <label for="gift-notes-zh">其他补充信息</label>
+          <textarea id="gift-notes-zh" name="message" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">申请礼品券</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    Following Breath &middot; followingbreath@gmail.com<br>
+    <a href="https://instagram.com/followingbreath" target="_blank" rel="noopener">Instagram</a> &middot;
+    <a href="https://www.tiktok.com/@followingbreath" target="_blank" rel="noopener">TikTok</a> &middot;
+    RedNote: FollowingBreath (ID 18778811369)
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
