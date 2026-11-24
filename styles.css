@@ -844,27 +844,28 @@ header.is-scrolled {
   content: "";
   position: absolute;
   z-index: 0;
-  right: -8%;
-  bottom: -20%;
-  width: 46%;
+  top: 6%;
+  right: -7%;
+  bottom: auto;
+  width: 40%;
   aspect-ratio: 1 / 1;
-  max-width: 420px;
+  max-width: 380px;
   border-radius: 50%;
-  border: 1px solid rgba(212, 160, 95, 0.3);
+  border: 1.5px solid rgba(212, 160, 95, 0.5);
   pointer-events: none;
   animation: fb-breathe 5.5s ease-in-out infinite;
 }
 
 @keyframes fb-breathe {
-  0%, 100% { transform: scale(0.94); opacity: 0.3; }
-  50% { transform: scale(1.05); opacity: 0.65; }
+  0%, 100% { transform: scale(0.9); opacity: 0.3; }
+  50% { transform: scale(1.1); opacity: 0.85; }
 }
 
 @media (max-width: 640px) {
   .hero::after {
-    width: 62%;
-    right: -14%;
-    bottom: -14%;
+    width: 55%;
+    right: -16%;
+    top: 2%;
   }
 }
 
