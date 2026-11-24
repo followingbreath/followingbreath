@@ -213,6 +213,12 @@ p {
   max-width: 62ch;
 }
 
+.research-note {
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  margin: -1rem 0 0;
+}
+
 ul.note-list {
   color: var(--text-soft);
   max-width: 62ch;
