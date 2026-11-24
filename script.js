@@ -95,4 +95,42 @@
     var box = list.closest('.current-box');
     if (box) box.style.display = anyVisible ? '' : 'none';
   });
+
+  // ---- Photo lightbox: click any site photo to see it larger ----
+  // Purely opt in, nothing opens on its own. Closes on click outside,
+  // the close button, or Escape.
+  var photos = document.querySelectorAll('.site-photo');
+  if (photos.length) {
+    var overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.innerHTML =
+      '<button type="button" class="lightbox-close" aria-label="Close">&times;</button>' +
+      '<img alt="">';
+    document.body.appendChild(overlay);
+
+    var overlayImg = overlay.querySelector('img');
+    var closeBtn = overlay.querySelector('.lightbox-close');
+
+    var openLightbox = function (src, alt) {
+      overlayImg.src = src;
+      overlayImg.alt = alt || '';
+      overlay.classList.add('is-open');
+    };
+    var closeLightbox = function () {
+      overlay.classList.remove('is-open');
+    };
+
+    photos.forEach(function (img) {
+      img.addEventListener('click', function () {
+        openLightbox(img.getAttribute('src'), img.getAttribute('alt'));
+      });
+    });
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeLightbox();
+    });
+    closeBtn.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  }
 })();
